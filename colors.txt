@@ -1,0 +1,17 @@
+font scheme:
+
+1. gray scale
+
+gray: #4b4b4b (title)
+grayLight1: #6a6a6a (icon or basic font?)
+grayLight2: #959595, #8c8c8c (basic font)
+border: #e7e7e7
+
+2. color scheme
+
+primary 500: #1e88e5
+primary 700: #1666ac
+
+
+accent yellow: #ffff00
+red: #ff5400

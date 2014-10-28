@@ -1,0 +1,15 @@
+home page:
+- left category
+- right banner carousel
+- hamgiin shildeg, hamgiin ih uzsen ..
+- top gnb (login, user info, my page link, notification, .....)
+- button global style
+- form element global style
+
+detail page:
+
+
+
+my page:
+
+...
