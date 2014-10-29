@@ -13,3 +13,25 @@ detail page:
 my page:
 
 ...
+
+
+
+login
+register
+
+notification
+- comment reply (count)
+- new ad count for saved search
+	- saved search feed layer
+
+my page 
+
+icon/user name
+
+niit shine zariin too
+tuhain category-d nemegdsen shine zariin too
+online users
+online chat for online users!
+
+
+

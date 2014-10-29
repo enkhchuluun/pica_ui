@@ -381,3 +381,47 @@ body {
     min-height: 200px;
     background-color: @bgGrayLight;
 }
+
+
+.p-best-box {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lighten(@gr, 20%);
+    border-radius: 2px;
+    
+    h5 {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: @primary;
+    }
+}
+
+.p-ad-short {
+    margin-bottom: 8px;
+    
+    .title {
+        color: @gr-darkest;
+        font-size: 13px;
+        .text-overflow();
+    }
+    
+    .p-stat-info {
+        font-size: 11px;
+        span {            
+            color: @gr-dark;
+        }
+    }
+
+}
+
+
+.p-v-list {
+    margin:0;
+    padding:0;
+    list-style: none;
+    li {
+        margin:0;
+        padding:0;
+    }
+}
