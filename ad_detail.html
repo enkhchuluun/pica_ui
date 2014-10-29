@@ -3,6 +3,7 @@
 <meta charset="utf-8" />    
 <title>Pica UI Concept</title>    
 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/lib/fontawesome/fnodist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/lib/bootstrap-3.2.0/dist/css/bootstrap.min.css" />
 <!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />-->
     
@@ -49,12 +50,47 @@
                     <div class="p-gnb-user">
                         <ul class="p-h-list">
                             <li>
-                                <a href="#"><span>Нэвтрэх</span></a>
+                                <a href="#"><i class="fa fa-bell"></i> <sup>2</sup></a>
+                                
+                                
+                                <div class="p-drop-down">
+                                    <div class="title">Шинээр нэмэгдсэн зарууд</div>
+                                    <ul class="p-v-list">
+                                        <li>
+                                            <div class="p-ad-notification">
+                                                <div class="title"><a href="#">1999 оны Mitsubish Pajero зарна aaa aaa aa</a></div>                            <div class="p-stat-info">
+                                                    <span><i class="fa fa-clock-o"></i> 1 цаг</span>
+                                                </div>
+                                            </div> 
+                                            <div class="p-ad-notification">
+                                                <div class="title"><a href="#">1999 оны Mitsubish Pajero зарна aaa aaa aa</a></div>                            <div class="p-stat-info">
+                                                    <span><i class="fa fa-clock-o"></i> 1 цаг</span>
+                                                </div>
+                                            </div>
+                                            <div class="p-ad-notification">
+                                                <div class="title"><a href="#">1999 оны Mitsubish Pajero зарна aaa aaa aa</a></div>                            <div class="p-stat-info">
+                                                    <span><i class="fa fa-clock-o"></i> 1 цаг</span>
+                                                </div>
+                                            </div>
+                                            <div class="p-ad-notification">
+                                                <div class="title"><a href="#">1999 оны Mitsubish Pajero зарна aaa aaa aa</a></div>                            <div class="p-stat-info">
+                                                    <span><i class="fa fa-clock-o"></i> 1 цаг</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="footer">
+                                        <button class="btn btn-default btn-block">Бүгдийг харах</button>
+                                    </div>
+                                </div>
+                                
                             </li>
                             <li>
-                                <a href="#"><span>Бүртгүүлэх</span></a>
+                                <a href="#"><i class="fa fa-comment-o"></i> <sup>3</sup></a>
                             </li>
-                            
+                            <li>
+                                <a href="#"><span>Чука чука</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -71,14 +107,14 @@
                 <div class="col-xs-12">
                     <ul class="p-top-layer">
                         <li>
-                            <a href="#" >Home</a>
+                            <a href="#" class="active">Home</a>
                         </li>
                         <li>
                             <a href="#" >Үл хөдлөх</a>
                             
                         </li>
                         <li>
-                            <a href="#" class="active">Ажлын байр</a>
+                            <a href="#">Ажлын байр</a>
                             <div class="p-sub-layer">
                                 <ul>
                                     <li class=""><a href="#" >Шинэ орон сууц</a></li>					
@@ -118,14 +154,12 @@
                         </li>
                     </ul>
                     
-                    <div class="p-main-tool text-right">
+                    <div class="p-main-tool">
                         <button type="button" class="btn btn-accent btn-sm">
                             <i class="fa fa-plus"></i>
                             Зар
                         </button>
                     </div>
-                    
-                    
                 </div>
             </div>
         </div>
@@ -133,97 +167,8 @@
     
     <div class="container-fluid p-content-wrapper">
         <div class="container">
-            <div class="row">
-                <div class="p-left-meta">
-                    <!--<ul class="p-sub-category">
-                        <li class=""><a href="#" class="active">Шинэ орон сууц</a></li>			
-                        <li class=""><a href="#" >Орон сууц</a></li>				
-                        <li class=""><a href="#" > Оффис</a></li>
-                        <li class=""><a href="" > Хашаа байшин, гэр</a></li>
-                        <li class=""><a href="">  Зуслангийн байр</a></li>                                   </ul>-->
-                    <div class="p-meta-wrapper">
-                        <div class="p-meta-box">
-                            <div class="title">Төрөл</div>
-                            <ul>
-                                <li>
-                                    <a href="#">Зарна <span class="num">(300)</span></a>
-                                    <a href="#">Авна <span class="num">(300)</span></a>
-                                    <a href="#">Түрээслэнэ <span class="num">(300)</span></a>
-                                    <a href="#">Солино <span class="num">(300)</span></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="p-meta-box">
-                            <div class="title">Байрлал</div>
-                            <ul>
-                                <li>
-                                    <a href="#">Сүхбаатай <span class="num">(300)</span></a>
-                                    <a href="#">Архангай <span class="num">(300)</span></a>
-                                    <a href="#">Монгол <span class="num">(300)</span></a>
-                                    <a href="#">Бээжин <span class="num">(300)</span></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="p-meta-box">
-                            <div class="title">Нөхцөл</div>
-                            <ul>
-                                <li>
-                                    <a href="#"><input type="checkbox" /> Шинэ <span class="num">(300)</span></a>
-                                </li>
-                                <li>
-                                    <a href="#"><input type="checkbox" /> Хуучин <span class="num">(300)</span></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="p-meta-box">
-                            <div class="title">Талбайр</div>
-                            <ul>
-                                <li>
-                                    <a href="#">~ 45m2 <span class="num">(300)</span></a>
-                                    <a href="#">~ 60m2 <span class="num">(300)</span></a>
-                                    <a href="#">~ 80m2 <span class="num">(300)</span></a>
-                                    <a href="#">~ 100m2 <span class="num">(300)</span></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="p-meta-box">
-                            <div class="title">Үнэ</div>
-                            <ul>
-                                <li>
-                                    <a href="#">~10сая <span class="num">(300)</span></a>
-                                    <a href="#">~20сая <span class="num">(300)</span></a>
-                                    <a href="#"> <input type="text" style="width:50px"> ₮ ~ <input type="text" style="width:50px"> ₮</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="p-center-content">
-                    <div class="p-ad-search-result">
-                        <div class="category-breadcrumb">
-                            <span>Үл хөдлөх &gt; Шинэ орон сууц </span>
-                            <div class="text-right">
-                                <button type="button" class="btn btn-accent btn-sm">Хагдлагах</button>
-                                <button type="button" class="btn btn-accent btn-sm"><i class="fa fa-bell"></i> &nbsp;</button>       
-                            </div>
-                        </div>
-                        <div class="search-meta">
-                            <span>Үнэ: <strong>~20сая</strong> <i class="fa fa-times"></i></span>
-                            <span>Байршил: <strong>Сүхбаатай</strong> <i class="fa fa-times"></i></span>
-                            <span>Ашиглалтанд орсон: <strong>2014</strong> <i class="fa fa-times"></i></span>
-                        </div>
-                        <div class="search-count">
-                            <span>Нийт: <strong>200</strong> зар байна.</span>
-                        </div>
-                    </div>
-                    
-                    
+            <div class="row">                
+                <div class="col-xs-6">
                     <div class="p-ad-box">
                         <div class="p-ad-info">
                             <div class="p-ad-image">
@@ -251,69 +196,10 @@
                         </div>
                         
                     </div>
-                    <div class="p-ad-box">
-                        <div class="p-ad-info no-image">
-                            <!--<div class="p-ad-image">
-                                <a href="#"><img src="/images/YurisNight_300x250.png" /></a>
-                            </div>-->
-                            <h4><a href="#">Японы талбай дээр байгаа Toyota Kluger Kluger Kluger Kluger</a></h4>
-                            <div class="p-ad-price-tag">
-                                <span class="price">22,000,000₮</span>
-                                <span class="tag"><a href="#">#Prius20</a></span>
-                                <span class="tag"><a href="#">#Eco-car</a></span>
-                                
-                            </div>
-                            <div class="p-ad-meta">
-                                <span>Он: <strong>2005/23/23</strong></span>
-                                <span>Хороп: <strong>Автомат</strong></span>
-                            </div>
-                        </div>
-                        <div class="p-ad-user-info">
-                            <div class="p-user-info"><i class="fa fa-user"></i> Чука Чука</div>                                
-                            <abbr class="timeago">1 hour ago</abbr>
-                            <div class="p-stat-info">
-                                <span><i class="fa fa-heart-o"></i> 11</span>
-                                <span><i class="fa fa-eye"></i> 300</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
-                    <div class="p-ad-box">
-                        ...
-                    </div>
+                    
                     
                 </div>
-                <div class="p-right-banner">
-                    <div class="p-display-banner">
-                        <img src="images/banner.png" />
-                    </div>
-                    
+                <div class="col-xs-3">
                     <div class="p-best-box">
                         <h5>Хамгийн их лайктай</h5>
                         <ul class="p-v-list">
@@ -392,6 +278,21 @@
                     
                     
                 </div>
+                <div class="col-xs-3">
+                    <div class="p-display-banner">
+                        <img src="images/banner.png" />
+                    </div>
+                    <div class="p-display-banner">
+                        <img src="images/banner.png" />
+                    </div>
+                    <div class="p-display-banner">
+                        <img src="images/banner.png" />
+                    </div>
+                    <div class="p-display-banner">
+                        <img src="images/banner.png" />
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

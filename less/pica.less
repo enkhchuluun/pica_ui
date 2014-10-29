@@ -20,9 +20,15 @@ body {
 }
 
 .p-logo {
+    display: block;
     font-size: 24px;
     color: @primary;
     font-weight: 600;
+    
+    sup {
+        color: @gr-dark;
+        font-size: 13px;
+    }
 }
 
 .p-logo-left {
@@ -54,6 +60,7 @@ body {
     background-color: @bgGrayLight;
     .box-shadow(0px 3px 3px rgba(red(lighten(@gr, 15%)), green(lighten(@gr, 15%)), blue(lighten(@gr, 15%)), 0.75));
     ul.p-top-layer {
+        display: inline-block;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -126,6 +133,10 @@ body {
         .p-logo-left {
             width: 70px;
         }
+    }
+    
+    .p-main-tool {
+        display: inline-block;
     }
     
 }
@@ -259,6 +270,7 @@ body {
     .category-breadcrumb {
         .make-row();
         margin-bottom: 10px;
+        .clearfix();
         
         > span {
             color: @gr-darker;
@@ -377,14 +389,22 @@ body {
 }
 
 .p-display-banner {
+    margin-bottom: 10px;
     width: 100%;
-    min-height: 200px;
+    //min-height: 200px;
     background-color: @bgGrayLight;
+    border: 1px solid @bgGray;
+    
+    img {
+        width: 100%;
+    }
+    
+    
 }
 
 
 .p-best-box {
-    margin: 10px 0;
+    margin-bottom: 10px;
     padding: 10px;
     background-color: white;
     border: 1px solid lighten(@gr, 20%);
@@ -425,3 +445,132 @@ body {
         padding:0;
     }
 }
+
+.p-h-list {
+    margin:0;
+    padding:0;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin:0;
+        padding:0;
+    }
+}
+
+.p-gnb-user {
+    >ul > li {
+        position: relative;
+        
+        > a {
+            display: block;
+            position: relative;
+            padding: 7px 8px 0 8px;
+
+            i {
+                font-size: 20px;
+            }
+
+            sup {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 16px;
+                color: white;
+                font-size: 10px;
+                border-radius: 50%;
+                height: 16px;
+                width: 16px;
+                background-color: @red;
+                line-height: 16px;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+        
+        &:hover {
+            .p-drop-down {
+                display: block;
+            }
+        }
+    }
+    
+    
+}
+
+.p-drop-down {
+    display: none;
+    z-index: 1200;
+    position: absolute;
+    margin-top: 10px;
+    //top: -10px;
+    background-color: @bgGrayLight;
+    //min-width:300px;
+    //min-height: 250px;
+    border-radius: 2px;
+    border: 1px solid @bgGray;
+    .box-shadow(0px 3px 3px rgba(red(lighten(@gr, 15%)), green(lighten(@gr, 15%)), blue(lighten(@gr, 15%)), 0.75));
+    
+    padding: 10px 20px 15px 20px;
+    
+    > .title {                
+        margin-bottom: 8px;        
+        text-align: center;
+        color: @gr;
+        font-size: 13px;
+    }
+    
+    .p-ad-notification {
+        margin-bottom: 8px;
+        //width: 100%;
+        display: block;
+        .clearfix();
+        .title {
+            display: block;
+            float: left;
+            width: 80%;            
+            .text-overflow();
+            font-size: 13px;
+            padding-right: 8px;
+        }
+        .p-stat-info {
+            display: block;
+            float: left;
+            width: 20%;
+            font-size: 11px;
+            line-height: 16px;
+        }
+    }
+    
+    > .footer {
+        margin-top: 15px;
+    }
+    
+    &:before {
+        z-index:1;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid @bgGray;
+        content: '';
+    }
+    
+    &:after {
+        z-index:2;
+        position: absolute;
+        top: -8px;
+        left: 11px;
+        width: 0; 
+        height: 0; 
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-bottom: 9px solid @bgGrayLight;
+        content: '';
+    }
+}
+
+
+
