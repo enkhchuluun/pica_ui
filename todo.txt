@@ -5,16 +5,22 @@ home page:
 - top gnb (login, user info, my page link, notification, .....) ok
     - drop down layer ok
 - button global style 
+    - let's style globally!!
 - form element global style
 
 detail page:
-- 
+- content ok
+- comment ok
+- share ok
 
 
 my page:
 
 ...
 
+
+- ad form page
+- baiguullaga form page
 
 
 login

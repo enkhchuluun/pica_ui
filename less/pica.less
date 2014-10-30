@@ -6,8 +6,13 @@
 @import "buttons.less";
 
 
+//bootstrap override
+@grid-gutter-width: 16px;
+
+
 body {
     background-color: @bgGray;
+    font-family: Roboto;
 }
 
 .affix {
@@ -22,11 +27,11 @@ body {
 .p-logo {
     display: block;
     font-size: 24px;
-    color: @primary;
+    color: white;
     font-weight: 600;
     
     sup {
-        color: @gr-dark;
+        color: white;
         font-size: 13px;
     }
 }
@@ -47,15 +52,16 @@ body {
 }
 
 .p-header {
-    background-color: white;
+    width: 100%;
     padding:10px 0;
+    .clearfix();
+    background-color: @primary;
+    color: white;
 }
 
 .p-main-menu {
-    //position: relative;
-    //position: fixed;
-    //top: 40px;
     width: 100%;
+    .clearfix();
     z-index: 1000;
     background-color: @bgGrayLight;
     .box-shadow(0px 3px 3px rgba(red(lighten(@gr, 15%)), green(lighten(@gr, 15%)), blue(lighten(@gr, 15%)), 0.75));
@@ -130,6 +136,12 @@ body {
     
     &.affix {
         background-color: white;
+        
+        
+        ul.p-top-layer > li > a {
+            //color: white;    
+        }
+        
         .p-logo-left {
             width: 70px;
         }
@@ -142,6 +154,8 @@ body {
 }
 
 .p-content-wrapper {
+    width:100%;
+    .clearfix();
     padding:10px 0;
     
     .p-left-meta {
@@ -169,6 +183,8 @@ body {
         padding-right: (@grid-gutter-width / 2);
     }
 }
+
+
 
 .p-meta-wrapper {
     background-color: white;
@@ -260,7 +276,6 @@ body {
 }
 
 .p-ad-search-result {
-    .make-row();
     background-color: @bgGrayLight;
     margin-bottom: 15px;
     padding: 10px;
@@ -301,10 +316,9 @@ body {
 }
 
 .p-ad-box {
-    .make-row();
-    border-radius: 2px;
-    border: 1px solid lighten(@gr, 20%);
     margin-bottom: 10px;
+    border-radius: 2px;
+    border: 1px solid lighten(@gr, 20%);    
     min-height: 80px;
     background-color: white;
     .clearfix();
@@ -404,7 +418,7 @@ body {
 
 
 .p-best-box {
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
     padding: 10px;
     background-color: white;
     border: 1px solid lighten(@gr, 20%);
@@ -465,6 +479,7 @@ body {
             display: block;
             position: relative;
             padding: 7px 8px 0 8px;
+            color: white;
 
             i {
                 font-size: 20px;
@@ -573,4 +588,219 @@ body {
 }
 
 
+.p-detail-content {
+    background-color: white;
+    
+}
 
+.p-box {
+    background-color: white;    
+    border: 1px solid lighten(@gr, 20%);
+    border-radius: 2px;    
+    padding:10px;
+    margin-bottom: 15px;
+    
+    .p-box-header {
+        margin-bottom: 10px;
+        
+        .p-breadcrumb {
+            font-size: 14px;
+            color: @gr;
+            margin-bottom: 10px;
+        }
+        
+        .p-ad-title {
+            display: inline-block;
+            width: 80%;
+            font-size: 16px;
+            font-weight: 600;
+            padding:0;
+            margin:0;
+        }
+        
+        .p-ad-price {
+            display: inline-block;
+            width: 18%;
+            font-size: 16px;
+            font-weight: 600;
+            padding:0;
+            margin-bottom:10px;
+            text-align: right;
+        }
+        
+        .p-ad-meta {
+            font-size: 12px;
+            color: @gr-dark;
+            .clearfix();
+        }
+    }
+    
+    .p-box-body {        
+        margin-bottom: 10px;
+        .p-ad-desc {
+            color: @gr-darkest;
+            font-size: 14px;
+        }
+        
+        .p-ad-contact {
+            margin-bottom: 20px;
+            .title {
+                font-size: 13px;
+                color: @gr;
+                margin-bottom: 10px;
+            }
+            
+            address {
+                abbr {
+                    color: @gr;
+                    font-size: 13px;                    
+                }
+                margin-bottom: 5px;
+            }
+        }
+        
+        .p-ad-tools {
+            position: relative;
+            margin: 0 -10px 20px -10px;
+            //background-color: @gr-light;
+            padding: 10px;
+            .clearfix();
+            
+            .p-ad-share {
+                margin-right: 150px;                
+            }
+            
+            .p-ad-actions {
+                position: absolute;
+                right: 10;
+                top:10;
+            }
+        }
+        
+        .p-ad-images {
+            margin-bottom: 20px;
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+                border: 1px solid @gr;
+            }
+        }
+        
+        .p-ad-map {
+            margin-bottom: 20px;
+            .title {
+                font-size: 13px;
+                color: @gr;
+                margin-bottom: 10px;
+            }
+            
+            .map {
+                width: 100%;
+                min-height: 200px;
+                background: @bgGray;
+            }
+        }
+    }
+    
+}
+
+.p-comment-wrapper {
+    .title {
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: @gr;
+    }
+    
+    .p-comment-insert {
+        margin-bottom: 15px;
+        
+        textarea {
+            border: 2px solid lighten(@primary, 10%);
+            box-shadow: none;
+            border-bottom: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            
+            overflow: hidden;
+            word-wrap: break-word;
+            resize: horizontal;
+            height: 50px;
+        }
+        
+        .p-comment-btns {
+            margin-top: -2px;
+            //padding: 10px;
+            border: 2px solid lighten(@primary, 10%);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            
+            .p-comment-btn {
+                display: inline-block;
+                padding: 5px 15px;
+                color: white;
+                font-size: 12px;
+                background-color: @primary;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .p-comment {
+        .clearfix();
+        margin-bottom: 10px;
+        
+        > a {
+            display: block;
+            float: left;
+            margin: 5px 0 0 0;
+        }
+        
+        > div {
+            padding-left: 45px;
+            
+            .meta-tools { 
+                position: relative;
+                
+                span {
+                    padding-right: 10px;
+                }
+                .meta {
+                    margin-right: 150px;
+                    span {
+                        color: @gr;
+                        font-size: 12px;
+                    }
+                }
+                
+                .tools {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top:0;
+                    
+                    span {
+                        font-size: 11px;                                           cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+        
+        &:hover {            
+            .meta-tools .tools {
+                display: block;
+            }
+        }
+    }
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid @gr;
+}

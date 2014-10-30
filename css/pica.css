@@ -21,6 +21,7 @@ a.active {
 }
 body {
   background-color: #e5e5e5;
+  font-family: Roboto;
 }
 .affix {
   position: fixed;
@@ -32,11 +33,11 @@ body {
 .p-logo {
   display: block;
   font-size: 24px;
-  color: #1e88e5;
+  color: white;
   font-weight: 600;
 }
 .p-logo sup {
-  color: #6a6a6a;
+  color: white;
   font-size: 13px;
 }
 .p-logo-left {
@@ -54,8 +55,18 @@ body {
   vertical-align: middle;
 }
 .p-header {
-  background-color: white;
+  width: 100%;
   padding: 10px 0;
+  background-color: #1e88e5;
+  color: white;
+}
+.p-header:before,
+.p-header:after {
+  content: " ";
+  display: table;
+}
+.p-header:after {
+  clear: both;
 }
 .p-main-menu {
   width: 100%;
@@ -63,6 +74,14 @@ body {
   background-color: #f5f5f5;
   -webkit-box-shadow: 0px 3px 3px rgba(187, 187, 187, 0.75);
   box-shadow: 0px 3px 3px rgba(187, 187, 187, 0.75);
+}
+.p-main-menu:before,
+.p-main-menu:after {
+  content: " ";
+  display: table;
+}
+.p-main-menu:after {
+  clear: both;
 }
 .p-main-menu ul.p-top-layer {
   display: inline-block;
@@ -143,31 +162,40 @@ body {
   display: inline-block;
 }
 .p-content-wrapper {
+  width: 100%;
   padding: 10px 0;
+}
+.p-content-wrapper:before,
+.p-content-wrapper:after {
+  content: " ";
+  display: table;
+}
+.p-content-wrapper:after {
+  clear: both;
 }
 .p-content-wrapper .p-left-meta {
   position: relative;
   float: left;
   width: 20.83333333%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .p-content-wrapper .p-center-content {
   position: relative;
   float: left;
   width: 54.16666667%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .p-content-wrapper .p-right-banner {
   position: relative;
   float: left;
   width: 25%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .p-meta-wrapper {
   background-color: white;
@@ -262,8 +290,6 @@ body {
   text-decoration: none;
 }
 .p-ad-search-result {
-  margin-left: -15px;
-  margin-right: -15px;
   background-color: #f5f5f5;
   margin-bottom: 15px;
   padding: 10px;
@@ -271,8 +297,8 @@ body {
   border-radius: 2px;
 }
 .p-ad-search-result .category-breadcrumb {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -8px;
+  margin-right: -8px;
   margin-bottom: 10px;
 }
 .p-ad-search-result .category-breadcrumb:before,
@@ -289,16 +315,16 @@ body {
   float: left;
   width: 66.66666667%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .p-ad-search-result .category-breadcrumb > div {
   position: relative;
   float: left;
   width: 33.33333333%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .p-ad-search-result .search-meta {
   margin-bottom: 10px;
@@ -317,11 +343,9 @@ body {
   color: #4b4b4b;
 }
 .p-ad-box {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-bottom: 10px;
   border-radius: 2px;
   border: 1px solid #c8c8c8;
-  margin-bottom: 10px;
   min-height: 80px;
   background-color: white;
 }
@@ -338,8 +362,8 @@ body {
   float: left;
   width: 83.33333333%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .p-ad-box .p-ad-info .p-ad-image {
   background-color: gray;
@@ -395,8 +419,8 @@ body {
   float: left;
   width: 16.66666667%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: #959595;
@@ -475,6 +499,7 @@ body {
   display: block;
   position: relative;
   padding: 7px 8px 0 8px;
+  color: white;
 }
 .p-gnb-user > ul > li > a i {
   font-size: 20px;
@@ -570,4 +595,202 @@ body {
   border-right: 9px solid transparent;
   border-bottom: 9px solid #f5f5f5;
   content: '';
+}
+.p-detail-content {
+  background-color: white;
+}
+.p-box {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.p-box .p-box-header {
+  margin-bottom: 10px;
+}
+.p-box .p-box-header .p-breadcrumb {
+  font-size: 14px;
+  color: #959595;
+  margin-bottom: 10px;
+}
+.p-box .p-box-header .p-ad-title {
+  display: inline-block;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.p-box .p-box-header .p-ad-price {
+  display: inline-block;
+  width: 18%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.p-box .p-box-header .p-ad-meta {
+  font-size: 12px;
+  color: #6a6a6a;
+}
+.p-box .p-box-header .p-ad-meta:before,
+.p-box .p-box-header .p-ad-meta:after {
+  content: " ";
+  display: table;
+}
+.p-box .p-box-header .p-ad-meta:after {
+  clear: both;
+}
+.p-box .p-box-body {
+  margin-bottom: 10px;
+}
+.p-box .p-box-body .p-ad-desc {
+  color: #323232;
+  font-size: 14px;
+}
+.p-box .p-box-body .p-ad-contact {
+  margin-bottom: 20px;
+}
+.p-box .p-box-body .p-ad-contact .title {
+  font-size: 13px;
+  color: #959595;
+  margin-bottom: 10px;
+}
+.p-box .p-box-body .p-ad-contact address {
+  margin-bottom: 5px;
+}
+.p-box .p-box-body .p-ad-contact address abbr {
+  color: #959595;
+  font-size: 13px;
+}
+.p-box .p-box-body .p-ad-tools {
+  position: relative;
+  margin: 0 -10px 20px -10px;
+  padding: 10px;
+}
+.p-box .p-box-body .p-ad-tools:before,
+.p-box .p-box-body .p-ad-tools:after {
+  content: " ";
+  display: table;
+}
+.p-box .p-box-body .p-ad-tools:after {
+  clear: both;
+}
+.p-box .p-box-body .p-ad-tools .p-ad-share {
+  margin-right: 150px;
+}
+.p-box .p-box-body .p-ad-tools .p-ad-actions {
+  position: absolute;
+  right: 10;
+  top: 10;
+}
+.p-box .p-box-body .p-ad-images {
+  margin-bottom: 20px;
+}
+.p-box .p-box-body .p-ad-images img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #959595;
+}
+.p-box .p-box-body .p-ad-map {
+  margin-bottom: 20px;
+}
+.p-box .p-box-body .p-ad-map .title {
+  font-size: 13px;
+  color: #959595;
+  margin-bottom: 10px;
+}
+.p-box .p-box-body .p-ad-map .map {
+  width: 100%;
+  min-height: 200px;
+  background: #e5e5e5;
+}
+.p-comment-wrapper .title {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #959595;
+}
+.p-comment-wrapper .p-comment-insert {
+  margin-bottom: 15px;
+}
+.p-comment-wrapper .p-comment-insert textarea {
+  border: 2px solid #4ca0ea;
+  box-shadow: none;
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: horizontal;
+  height: 50px;
+}
+.p-comment-wrapper .p-comment-insert .p-comment-btns {
+  margin-top: -2px;
+  border: 2px solid #4ca0ea;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.p-comment-wrapper .p-comment-insert .p-comment-btns .p-comment-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  color: white;
+  font-size: 12px;
+  background-color: #1e88e5;
+  cursor: pointer;
+}
+.p-comment-wrapper .p-comment {
+  margin-bottom: 10px;
+}
+.p-comment-wrapper .p-comment:before,
+.p-comment-wrapper .p-comment:after {
+  content: " ";
+  display: table;
+}
+.p-comment-wrapper .p-comment:after {
+  clear: both;
+}
+.p-comment-wrapper .p-comment > a {
+  display: block;
+  float: left;
+  margin: 5px 0 0 0;
+}
+.p-comment-wrapper .p-comment > div {
+  padding-left: 45px;
+}
+.p-comment-wrapper .p-comment > div .meta-tools {
+  position: relative;
+}
+.p-comment-wrapper .p-comment > div .meta-tools span {
+  padding-right: 10px;
+}
+.p-comment-wrapper .p-comment > div .meta-tools .meta {
+  margin-right: 150px;
+}
+.p-comment-wrapper .p-comment > div .meta-tools .meta span {
+  color: #959595;
+  font-size: 12px;
+}
+.p-comment-wrapper .p-comment > div .meta-tools .tools {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.p-comment-wrapper .p-comment > div .meta-tools .tools span {
+  font-size: 11px;
+  cursor: pointer;
+}
+.p-comment-wrapper .p-comment > div .meta-tools .tools span:hover {
+  text-decoration: underline;
+}
+.p-comment-wrapper .p-comment:hover .meta-tools .tools {
+  display: block;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #959595;
 }
